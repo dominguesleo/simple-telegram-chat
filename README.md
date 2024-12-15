@@ -30,24 +30,24 @@ The following libraries are required and listed in `requirements.txt`:
 ## Installation
 
 1. Clone this repository:
-        ```sh
-        git clone https://github.com/dominguesleo/simple-telegram-chat.git
-        cd simple-telegram-chat
-        ```
+    ```sh
+    git clone https://github.com/dominguesleo/simple-telegram-chat.git
+    cd simple-telegram-chat
+    ```
 
 2. Create a virtual environment and install dependencies:
-        ```sh
-        python -m venv venv
-        source venv/bin/activate  # On Windows: venv\Scripts\activate
-        pip install -r requirements.txt
-        ```
+    ```sh
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    pip install -r requirements.txt
+    ```
 
 3. Create a `.env` file in the root directory of the project with the following content:
-        ```env
-        TELEGRAM_TOKEN=<YOUR_TELEGRAM_TOKEN>
-        OLLAMA_API_URL=http://host.docker.internal:11434/api/chat
-        OLLAMA_API_MODEL=llama3.1:latest
-        ```
+    ```env
+    TELEGRAM_TOKEN=<YOUR_TELEGRAM_TOKEN>
+    OLLAMA_API_URL=http://host.docker.internal:11434/api/chat
+    OLLAMA_API_MODEL=llama3.1:latest
+    ```
 
 ## Environment Variables
 
@@ -58,9 +58,9 @@ The following libraries are required and listed in `requirements.txt`:
 ## Usage
 
 To start the bot, run the following command:
-    ```sh
-    python main.py
-    ```
+```sh
+python main.py
+```
 
 The bot will respond to the following commands:
 
@@ -72,11 +72,11 @@ The bot will respond to the following commands:
 You can also run the bot using Docker:
 
 1. Build the Docker image:
-        ```sh
-        docker build -t simple-telegram-chat .
-        ```
+    ```sh
+    docker build -t simple-telegram-chat .
+    ```
 
 2. Run the container:
-        ```sh
-        docker run -d --name simple-telegram-chat -e TELEGRAM_TOKEN=<YOUR_TELEGRAM_TOKEN> simple-telegram-chat
-        ```
+    ```sh
+    docker run -d --name simple-telegram-chat -e TELEGRAM_TOKEN=<YOUR_TELEGRAM_TOKEN> simple-telegram-chat
+    ```
