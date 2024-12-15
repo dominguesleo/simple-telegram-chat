@@ -32,7 +32,7 @@ The following libraries are required and listed in `requirements.txt`:
 1. Clone this repository:
     ```sh
     git clone https://github.com/dominguesleo/simple-telegram-chat.git
-    cd Simple-telegram-chat
+    cd simple-telegram-chat
     ```
 
 2. Create a virtual environment and install dependencies:
