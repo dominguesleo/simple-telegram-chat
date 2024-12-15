@@ -1,7 +1,6 @@
 __pycache__/
 .venv/
 .vscode/
-img/
 .env
 chat_history.db
 *.pyc
