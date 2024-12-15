@@ -1,0 +1,9 @@
+__pycache__/
+.venv/
+.vscode/
+img/
+.env
+chat_history.db
+README.md
+.git
+*.pyc
